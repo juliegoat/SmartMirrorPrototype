@@ -1,6 +1,9 @@
-$(document).ready(function() {
+$(document).ready(getWeather);
+setInterval(getWeather, 300000); 
+
+function getWeather() {
         $.ajax({
-            url: 'http://localhost:8888/weather.php',
+            url: 'http://localhost/weather.php',
             dataType: 'json',
             success: function(data) {
                 var temp = JSON.stringify(data.main.temp);
@@ -8,12 +11,12 @@ $(document).ready(function() {
 
                 var weather = JSON.stringify(data.weather[0].id);
                 var description = JSON.stringify(data.weather[0].description);
-                $("#weather").append('<p>'+ Ftemp.toPrecision(2) +'&#176;<i class="owf owf-'+weather+'"></i></p>');
+                $("#weather").html('<p>'+ Ftemp.toPrecision(2) +'&#176;<i class="owf owf-'+weather+'"></i></p>');
                 
             },
              error: function() {
-                $("#weather").append("error");
+                $("#weather").html("error");
                 alert('error');
             }
         });
-    });
+};

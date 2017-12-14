@@ -9,3 +9,10 @@ body {
   	bottom: 0;
   	left: 0;
 }
+#clockbox {
+	font-family: helvetica;
+	font-size: 72px;
+	position: absolute;
+  	bottom: 0;
+  	left: 0;
+}

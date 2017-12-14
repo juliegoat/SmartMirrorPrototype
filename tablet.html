@@ -4,18 +4,46 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Tablet</title>
   </head>
   <body>
 
+<div id="left">
+  <div id="clockbox"></div>
+
   <div id="weather"></div>
+</div>
 
-  <div id="today"></div>
+<div id="lists">
+  <div id="today">
+    <h1>Today's Schedule</h1>
+    <ul>
+      <li>10:00 AM - 12:00 PM Breakfast with Dad</li>
+      <li>2:30 PM - 3:30 PM Jingle Bell Fun Run</li>
+      <li>6:00 PM - 7:00 PM AquaZumba with Amber</li>
+    </ul>
 
-  <div id="tomorrow"></div>
+  </div>
 
-  <div id="reminders"></div>
+  <div id="twitter">
+    <h1>Tweets from friends</h1>
+    <div id="twitter_tweets"></div>
+    
+          
+  </div>
+
+  <div id="reminders">
+      <h1>Today's Top 3 To Do</h1>
+      <ul>
+        <li>Send out thesis survey</li>
+        <li>Finish wireframing SM app</li>
+        <li>Update resume</li>
+      </ul>
+  </div>
+</div>
   </body>
   <script type="text/javascript" src="weather.js"></script>
+  <script type="text/javascript" src="clock.js"></script>
+  <script type="text/javascript" src="twitter.js"></script>
 </html>

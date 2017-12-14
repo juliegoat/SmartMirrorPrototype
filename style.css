@@ -1,0 +1,41 @@
+body {
+	background:#000;
+	color:#FFF;
+}
+h1{
+	font-size: 32px;
+}
+#weather {
+	font-family: helvetica;
+	font-size: 72px;
+	position: absolute;
+  	bottom: 0;
+  	left: 0;
+}
+#clockbox {
+	font-family: helvetica;
+	font-size: 72px;
+	position: relative;
+  	bottom: 0;
+  	left: 0;
+}
+#date {
+	font-size: 42px;
+}
+#twitter {
+	max-width: 450px;
+}
+#tweet {
+	max-width: 450px;
+}
+#lists {
+	float: right;
+	top:0;
+	font-size: 18px;
+}
+#left {
+	float: left;
+}
+li {
+	list-style-type: none;
+}
